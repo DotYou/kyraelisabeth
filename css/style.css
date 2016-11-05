@@ -1,0 +1,106 @@
+
+/* Reset */
+html, body, div, span, h1, h2, h3, p, blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+footer, header, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+/* Style */
+
+html, body {
+	min-height: 100%;
+	background-color: black;
+}
+
+.bodybg {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.bodybg img {
+	opacity:0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	filter: blur(3px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+}
+
+@keyframes imgFadeInOut {
+	0% {
+		opacity:0;
+	}
+	5% {
+		opacity:1;
+	}
+	25% {
+		opacity:1;
+	}
+	30% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+.bodybg img {
+	animation: imgFadeInOut 60s linear infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.bodybg img:nth-of-type(0n+1) {
+	animation-delay: 45s;
+}
+.bodybg img:nth-of-type(0n+2) {
+	animation-delay: 30s;
+}
+.bodybg img:nth-of-type(0n+3) {
+	animation-delay: 15s;
+}
+.bodybg img:nth-of-type(0n+4) {
+	animation-delay: 0s;
+}
+
+
+.content {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content img {
+	max-width:100%;
+	opacity: 0.8;
+}
