@@ -272,6 +272,7 @@ textarea {
 @media only screen and (max-width: 690px) {
 	.row.top input {
 		width: 100%;
+		box-sizing: border-box;
 	}
 	.row.top input:first-child {
 		float: none;
