@@ -36,7 +36,7 @@ html, body {
 }
 
 .bodybg {
-	position: absolute;
+	position: fixed;
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
@@ -98,9 +98,189 @@ html, body {
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
+	max-width: 90%;
+	font-family: 'Century Gothic', 'Muli', sans-serif;
+	line-height: 1.6em;
+	text-transform: uppercase;
 }
 
-.content img {
+header {
+	min-height: 150px;
+}
+
+header img {
 	max-width:100%;
 	opacity: 0.8;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 2.5em;
+	line-height: 3em;
+}
+
+p {
+	margin: 20px 0;
+}
+
+section {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 3%;
+}
+
+section p:first-child {
+	margin-top: 0;
+}
+
+section a {
+	display: inline-block;
+	margin: 10px 0;
+}
+section a:first-child {
+	margin-right: 20px
+}
+@media only screen and (max-width: 740px) {
+	section a {
+		display: block;
+	}
+}
+
+section a, section a:hover, section a:active {
+	color: white;
+	text-decoration: none;
+}
+
+section a:hover {
+	text-decoration: underline;
+}
+
+section .contact {
+	text-align: left;
+	display: inline-block;
+}
+
+section .contact i {
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+	width: 3.75em;
+	height: 3.75em;
+	border-radius: 100%;
+	border: solid 1px #c8cccf;
+	line-height: 3.75em;
+	overflow: hidden;
+	text-align: center;
+	text-indent: 3.75em;
+	white-space: nowrap;
+}
+
+section .contact i:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	font-size: 1.85rem;
+	line-height: inherit;
+	text-align: center;
+	text-indent: 0;
+}
+
+
+
+form {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+input, textarea {
+	color: #ddd;
+	font-size: 13pt;
+	font-weight: 400;
+	line-height: 1.5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	background: rgba(144, 144, 144, 0.20);
+	border-radius: 0;
+	border: 2px solid rgba(100, 100, 100, 0.15);
+	display: inline-block;
+	outline: 0;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	font-family: "Raleway", "Helvetica", sans-serif;
+}
+
+input:focus, textarea:focus {
+	border: 2px solid white;
+}
+
+input {
+	width: 45%;
+	min-width: 250px;
+}
+
+input[type="submit"] {
+	background: rgba(144, 144, 144, 0.25);
+}
+input[type="submit"]:hover {
+	background: rgba(144, 144, 144, 0.7);
+}
+
+input.gotcha{
+	display: none;
+}
+
+.row.top {
+	overflow: hidden;
+}
+.row.top input:first-child {
+	float: left;
+}
+.row.top input:last-child {
+	float: right;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:    #777;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:    #777;
+	opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:    #777;
+	opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:    #777;
+}
+
+@media only screen and (max-width: 690px) {
+	.row.top input {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.row.top input:first-child {
+		float: none;
+	}
+	.row.top input:last-child {
+		float: none;
+	}
+	section .contact .fb-link span {
+		display: none;
+	}
 }
