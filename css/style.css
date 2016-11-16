@@ -280,4 +280,7 @@ textarea {
 	.row.top input:last-child {
 		float: none;
 	}
+	section .contact .fb-link span {
+		display: none;
+	}
 }
