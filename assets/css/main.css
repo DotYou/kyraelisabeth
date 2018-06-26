@@ -2611,21 +2611,23 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: #787878;
+			color: #4e4e4e;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
+			text-shadow: -1px 0 #eaeaea, 0 1px #eaeaea, 1px 0 #eaeaea, 0 -1px #eaeaea;
 		}
 
 		#header h2 {
-			color: #787878;
+			color: #616161;
 			font-size: 1.2em;
 			line-height: 1.5em;
+			text-shadow: -1px 0 #eaeaea, 0 1px #eaeaea, 1px 0 #eaeaea, 0 -1px #eaeaea;
 		}
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 9em;
 		}
 
 /* Footer */
