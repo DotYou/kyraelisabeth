@@ -98,6 +98,20 @@
 		// Lightbox gallery.
 			$window.on('load', function() {
 
+				$('#header').poptrox({
+					caption: function($a) { return "Kyra Elisabeth de Rooij"; },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.inner a.image',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: false,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
+
 				$('#lofdicht').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
@@ -112,17 +126,17 @@
 					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
 				});
 
-				$('#header').poptrox({
-					caption: function($a) { return "Kyra Elisabeth de Rooij"; },
+				$('#robijnhof').poptrox({
+					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
 					popupLoaderText: '',
-					selector: '.inner a.image',
+					selector: '.work-item a.image',
 					usePopupCaption: true,
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
-					usePopupNav: false,
+					usePopupNav: true,
 					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
 				});
 
