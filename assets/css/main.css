@@ -2375,6 +2375,7 @@ table.alt tfoot {
     -ms-justify-content: space-between;
     justify-content: space-between;
     background-color: #dfe3ec;
+    /*background-image: url(../../images/bg.jpg);*/
     background-position: top left, bottom center;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -2423,11 +2424,13 @@ table.alt tfoot {
     width: 9em
 }
 
-#footer .icons {
-    margin: 1em 0 0
+#header >.inner > .icons {
+    margin-top: 3em;
+    display: none;
 }
 
-#footer .icons a {
+#header .icons a,
+#footer .icons a{
     color: #787878
 }
 
@@ -2774,9 +2777,13 @@ body.is-touch .poptrox-popup .closer, body.is-touch .poptrox-popup .nav-next, bo
         display: inline
     }
 
+    #header >.inner > .icons {
+        display: block;
+    }
+
     #footer {
-        background-color: #1f1815;
-        background-image: url(../../images/bg.jpg);
+        background-color: #dfe3ec;
+        /*background-image: url(../../images/bg.jpg);*/
         background-position: top left, bottom center;
         background-repeat: repeat, no-repeat;
         bottom: auto;
